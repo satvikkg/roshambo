@@ -21,7 +21,6 @@ for db in os.listdir(database_dir):
         sort_by="ComboTanimoto",
         write_to_file=True,
         gpu_id=0,
-        working_dir=f"{wd}",
     )
     os.rename('hits.sdf', f'{db_name}_hits.sdf')
     os.rename('roshambo.csv', f'{db_name}_hits.csv')
